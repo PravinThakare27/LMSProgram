@@ -1,0 +1,25 @@
+.logout{
+    padding-left: 210px;
+}
+                 .navbar-collapse {
+justify-content: flex-end;
+
+}
+.card-design{
+
+padding-left: 10px;
+padding-top: 50px;
+margin-left: 200px;
+margin-right: 0px;
+padding-right: 10px;
+
+}
+.design{
+    margin-left: 60px;
+    padding-left: 0px;
+}
+.msg{
+    font-size: 60px;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}

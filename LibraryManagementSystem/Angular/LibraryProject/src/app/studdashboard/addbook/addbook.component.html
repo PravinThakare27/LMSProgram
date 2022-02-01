@@ -1,0 +1,47 @@
+<form ngNativeValidate [formGroup]="addb" (ngSubmit)="addbook()">
+    <fieldset>
+        <legend>Add Book:</legend>
+        <div class="form-group row p-2">
+          
+           
+            <div class="col-md-6">
+                <label for="title">Book Title</label>
+                <input type="text" class="form-control"
+                id="title" placeholder="Please enter book title" [(ngModel)]="book.title" formControlName="title" required>
+            </div>
+            <div class="col-md-6">
+                <label for="author">Author Name</label>
+                <input type="text" class="form-control"
+                id="author" placeholder="Please enter author name"[(ngModel)]="book.author" formControlName="author" required>
+            </div>
+        </div>
+        <div class="form-group row p-2">
+            <div class="col-md-6">
+                <label for="category">Category </label>
+                <input type="text" class="form-control"
+                id="category" placeholder="Please Category" [(ngModel)]="book.category" formControlName="category" required>
+            </div>
+            <div class="col-md-6">
+                <label for="publisher">Publisher </label>
+                <input type="text" class="form-control"
+                id="publisher" placeholder="Please publisher" [(ngModel)]="book.publisher" formControlName="publisher" required>
+            </div>
+        </div>
+       
+        <div class="form-group row p-2">
+            <div class="col-md-6">
+                <label for="price">Price </label>
+                <input type="text" class="form-control"
+                id="price" placeholder="Please enter price" [(ngModel)]="book.price" formControlName="price" required>
+            </div>
+            <div class="col-md-6">
+                <label for="quantity">Quantity </label>
+                <input type="text" class="form-control"
+                id="quantity" placeholder="Please enter quantity" [(ngModel)]="book.quantity" formControlName="quantity" required>
+            </div>
+        </div>
+        <div class="p-2">
+        <input type="Submit" class="btn btn btn-primary" value="Submit">
+        </div>
+    </fieldset>
+</form>

@@ -1,0 +1,39 @@
+<div class="admin">
+    <form ngNativeValidate [formGroup]="requiredForm"  (ngSubmit)="addlibrarian()">
+    <label style="color:black; font-size: 20px;"></label>
+    <h1 style=" font-size: 25px;">Add Librarian</h1>
+    <div class="form-group col-md-6 p-2">
+    <label style="color:black;">Name</label>
+    <input type="text" class="form-control col-xs-4"  name="name" placeholder="Enter name" [(ngModel)]="data.name" formControlName="name"  required>
+    
+
+    </div>
+    <div class="form-group col-md-6 p-2">
+    <label style="color:black;">Email address</label>
+    <input type="email" class="form-control"  name="email" placeholder="Enter email" [(ngModel)]="data.gmail" formControlName="emailid"  required>
+   
+    
+</div>
+    
+    <div class="form-group col-md-6 p-2">
+    <label style="color:black;">Password</label>
+    <input type="password" class="form-control"  name="password" placeholder="Enter password" [(ngModel)]="data.password" formControlName="password"  required>
+   
+    
+</div>
+    
+    <div class="form-group col-md-6 p-2">
+    <label style="color:black;">Mobile Number</label>
+    <input type="text" class="form-control"  name="mobile" placeholder="Enter mobile" [(ngModel)]="data.mobile" formControlName="mobile"  required>
+    
+    
+</div>
+    <div class="button">
+<input class="btn btn-primary" type="submit" value="Submit">
+&nbsp;
+<input class="btn btn-primary" type="reset" value="Reset">
+    </div>
+
+    
+    </form>
+</div>

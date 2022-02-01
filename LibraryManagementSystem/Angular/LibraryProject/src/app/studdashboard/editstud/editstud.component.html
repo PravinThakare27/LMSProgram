@@ -1,0 +1,53 @@
+<form>
+        
+  <legend>Update Student details:</legend>
+  <div class="form-group row p-2">
+  
+      <div class="col-md-4">
+          <label for="author">First Name:</label>
+          <input type="text" class="form-control" [(ngModel)]="stud.firstname"
+        value="{{stud.firstname}}" name="firstname">
+      </div>
+      <div class="col-md-4">
+        <label for="isbn">Last name:</label>
+        <input type="text" class="form-control"
+        [(ngModel)]="stud.lastname" value="stud.lastname" name="lastname">
+    </div>
+
+   
+  </div>
+
+  <div class="form-group row p-2">
+      <div class="col-md-4">
+        <label for="author">Email id:</label>
+        <input type="text" class="form-control" [(ngModel)]="stud.emailid"
+        value="{{stud.emailid}}" name="emailid">
+       </div>
+      <div class="col-md-4">
+      <label for="isbn">Password:</label>
+      <input type="text" class="form-control"
+      [(ngModel)]="stud.password" value="stud.password" name="password">
+      </div>
+     
+   </div>
+   <div class="form-group row p-2">
+    <div class="col-md-4">
+      <label for="isbn">Mobile no:</label>
+      <input type="text" class="form-control"
+      [(ngModel)]="stud.mobile" value="stud.mobile" name="mobile">
+      </div>
+      <div class="col-md-4">
+        <label for="isbn">Date of birth:</label>
+        <input type="date" class="form-control"
+        [(ngModel)]="stud.dob" value="stud.dob" name="dob">
+        </div>
+
+   </div>
+
+  <div class="p-2">
+  <input type="Submit" class="btn btn btn-primary" (click)="updatestud()" value="Submit">
+  </div>
+
+</form>
+
+

@@ -1,0 +1,19 @@
+.logout{
+    padding-left: 1000px;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.card-design{
+
+    padding-left: 0px;
+    padding-top: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    
+}
+.design{
+    margin-left: 30px;
+    padding-left: 0px;
+}

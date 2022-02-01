@@ -1,0 +1,14 @@
+<form ngNativeValidate [formGroup]="return" (ngSubmit)="returnbook(return.value)">
+    <div class="row">
+      <div class="col">
+        <label for="inputEmail4">Book Id:</label>
+        <input type="text" class="form-control"  placeholder="Enter book id" name="bookid" formControlName="bookid" ngModel>
+      </div>
+      <div class="col">
+        <label for="inputEmail4">Student Id</label>
+        <input type="text" class="form-control" placeholder="Enter student id"  name="id" formControlName="id" ngModel>
+      </div>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Return</button>
+  </form>

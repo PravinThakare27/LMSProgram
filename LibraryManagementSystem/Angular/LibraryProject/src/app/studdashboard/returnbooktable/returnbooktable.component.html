@@ -1,0 +1,39 @@
+<table class="table table-striped">
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Book ID</th>
+        <th scope="col">ISBN</th>
+        <th scope="col">Book Title</th>
+        <th scope="col">Book Publisher</th>
+        <th scope="col">Student Id</th>
+        <th scope="col">Student Name </th>
+        <th scope="col">Student Email </th>
+        <th scope="col">Book IssueDate</th>
+        <th scope="col">Date due</th>
+        <th scope="col">Book Status</th>
+        <th scope="col">Book Return Date</th>
+        <th scope="col">Book fine</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let b of data">
+        <td>{{b.bookid}}</td>
+        <td>{{b.isbn}}</td>
+        <td>{{b.title}}</td>
+        <td>{{b.publisher}}</td>
+  
+        <td>{{b.id}}</td>
+        <td>{{b.name}}</td>
+        <td>{{b.emailid}}</td>
+        <td>{{b.issuedate}}</td>
+        <td>{{b.datedue}}</td>
+        <td>{{b.bookstatus}}</td>
+        <td>{{b.returneddate}}</td>
+        <td>{{b.fine}}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+  </table>
